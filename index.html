@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
 </head>
 <body>
-    <div class="hero">
+    <div class="hero flex--column">
         <div class="flex--row hero__header">
             <div class="hero__header__logo">
                 <img src="images/logo.svg" alt="">
             </div>
-            <a href="" class="hero__header__cta">Try It Free </a>
+            <a href="">Try It Free </a>
         </div>
-        <div class="flex--column hero__texts">
+        <div class="hero__texts">
             <h1 class="title hero__texts__title">
                 Build The Community Your Fans Will Love
             </h1>
@@ -28,7 +28,7 @@
         <div class="hero__picture">
             <img src="images/screen-mockups.svg" alt="">
         </div>
-        <div class="flex--column hero__numbers">
+        <div class="hero__numbers">
             <div class="hero__numbers__containers">
                 <div class="hero__numbers__picture">
                     <img src="images/icon-communities.svg" alt="" class="hero__numbers__icon">
@@ -44,43 +44,97 @@
                 <p class="hero__numbers__texts">Messages Sent</p>
             </div>
         </div>
-        <div class="wave wave--buttom"></div>
     </div>
 
+    <div class="wave wave--top wave--grow"></div>
+    
+    <section class="flex--column grow__together">
+        <div class="section__img">
+            <img src="images/illustration-grow-together.svg" alt="">
+        </div>
+        <div class="section__texts">
+            <h2 class="section__title">Grow Together</h2>
+            <div class="section__paragraph">Generate meaningful discussions with your audience and build a strong, loyal community. 
+                Think of the insightful conversations you miss out on with a feedback form. </div>
+        </div>
+    </section>
+    
+    <div class="wave wave--top wave--flowing"></div>
 
-<!--     
+    <section class="flex--column flowing">
+        <div class="section__img">
+            <img src="images/illustration-flowing-conversation.svg" alt="">
+        </div>
+        <div class="section__texts">
+            <h2 class="section__title">Flowing Conversations</h2>
+            <div class="section__paragraph">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</div>
+        </div>
+    </section>
+    
+    <div class="wave wave--top wave--users"></div>
 
-    
-    
-  
-   
-    
-  
-    Grow Together
-    Generate meaningful discussions with your audience and build a strong, loyal community. 
-    Think of the insightful conversations you miss out on with a feedback form. 
-  
-    Flowing Conversations
-    You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-    just-in-time loading for a more natural flow.
-  
-    Your Users
-    It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-    once signed in to your app, your users can start chatting immediately.
-  
-    Ready To Build Your Community?
-    Get Started For Free
-  
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-    vestibulum a, ultrices quis sem.
-    
-    Phone: +1-543-123-4567
-    example@huddle.com
-  
-    Newsletter
-    To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-    send you spam or pass on your email address
-  
-    Subscribe -->
+    <section class="flex--column your-users">
+        <div class="section__img">
+            <img src="images/illustration-your-users.svg" alt="">
+        </div>
+        <div class="section__texts">
+            <h2 class="section__title">Your Users</h2>
+            <div class="section__paragraph">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</div>
+        </div>
+    </section>
+
+    <div class="wave wave--top wave--cta"></div>
+
+    <div class="flex--column section__cta">
+        <div class="section__texts">
+            <h2 class="section__title">Ready To Build Your Community?</h2>
+            <a href="">Get Started For Free</a>
+        </div>
+    </div>
+
+    <div class="wave wave--top wave--footer"></div>
+
+    <footer class="flex--column footer">
+        <div class="footer__container">
+            <div class="footer__texts">
+                <h3 class="footer__title">Newsletter</h3>
+                <p class="footer__paragraph">    To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
+                <form action="" class="flex--column">
+                    <input type="text" class="footer__input">
+                    <button class="footer__button" type="submit">Subscribe</button>
+                </form>
+                
+            </div>
+            <div class="footer__info">
+                <img src="images/footer-logo.svg" alt="">
+                <p class="footer__paragraph">    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+            </div>
+        </div>
+        <div class="footer__contact">
+            <div class="footer__contact__info">
+                <img src="images/icon-phone.svg" alt="">
+                <p>Phone: +1-543-123-4567</p>
+            </div>
+            <div class="footer__contact__info">
+                <img src="images/icon-email.svg" alt="">
+                <p>example@huddle.com</p>
+            </div>
+        </div>
+
+        <div class="footer__medias">
+            <div class="footer__medias__container">
+                <a href="#">
+                    <img src="images/facebook.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/instagram-icon.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/twitter.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
