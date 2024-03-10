@@ -52,24 +52,24 @@ a,
 }
 
 .wave--grow{
-    --wave: url(/huddle-landing-page/images/bg-section-top-mobile-1.svg);
+    --wave: url(../images/bg-section-top-mobile-1.svg);
 }
 
 .wave--flowing{
-    --wave: url(/huddle-landing-page/images/bg-section-bottom-mobile-1.svg);
+    --wave: url(../images/bg-section-bottom-mobile-1.svg);
 }
 
 .wave--users{
-    --wave: url(/huddle-landing-page/images/bg-section-top-mobile-2.svg);
+    --wave: url(../images/bg-section-top-mobile-2.svg);
 
 }
 
 .wave--cta{
-    --wave: url(/huddle-landing-page/images/bg-section-bottom-mobile-2.svg);
+    --wave: url(../images/bg-section-bottom-mobile-2.svg);
 }
 
 .wave--footer{
-    --wave: url(/huddle-landing-page/images/bg-footer-top-mobile.svg)
+    --wave: url(../images/bg-footer-top-mobile.svg)
 }
 
 .hero{
@@ -363,24 +363,24 @@ form{
 
 @media (min-width: 768px) {
     .wave--grow{
-        --wave: url(/huddle-landing-page/images/bg-section-top-desktop-1.svg);
+        --wave: url(../images/bg-section-top-desktop-1.svg);
     }
     
     .wave--flowing{
-        --wave: url(/huddle-landing-page/images/bg-section-bottom-desktop-1.svg);
+        --wave: url(../images/bg-section-bottom-desktop-1.svg);
     }
     
     .wave--users{
-        --wave: url(/huddle-landing-page/images/bg-section-top-desktop-2.svg);
+        --wave: url(../images/bg-section-top-desktop-2.svg);
     
     }
     
     .wave--cta{
-        --wave: url(/huddle-landing-page/images/bg-section-bottom-desktop-2.svg);
+        --wave: url(huddle-landing-page/images/bg-section-bottom-desktop-2.svg);
     }
     
     .wave--footer{
-        --wave: url(/huddle-landing-page/images/bg-footer-top-desktop.svg)
+        --wave: url(../images/bg-footer-top-desktop.svg)
     }
 
     .hero__numbers{
