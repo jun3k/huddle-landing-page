@@ -29,7 +29,7 @@ body{
 .title{
     color: var(--very-dark-cyan);
     font-family: var(--poppins);
-    font-size: 1.375rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -37,20 +37,8 @@ a,
 .paragraph{
     color: var(--very-dark-cyan);
     font-family: var(--open-sans);
-    font-size: .8125rem;
     font-weight: 500;
     display: block;
-}
-
-.flex--row{
-    display: flex;
-    flex-direction: row;
-}
-
-.flex--column{
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 .wave{
@@ -58,31 +46,42 @@ a,
     height: 100px;
     background-repeat: no-repeat;
     background-size: 100% 100px;
-}
-
-.wave--top{
     left: 0;
     top: 0;
-    background-image: var(--wave-top);
+    background-image: var(--wave);
 }
 
-.wave--buttom{
-   left: 0;
-   bottom: 0;
-   background-image: var(--wave-bottom); 
+.wave--grow{
+    --wave: url(/huddle-landing-page/images/bg-section-top-mobile-1.svg);
+}
+
+.wave--flowing{
+    --wave: url(/huddle-landing-page/images/bg-section-bottom-mobile-1.svg);
+}
+
+.wave--users{
+    --wave: url(/huddle-landing-page/images/bg-section-top-mobile-2.svg);
+
+}
+
+.wave--cta{
+    --wave: url(/huddle-landing-page/images/bg-section-bottom-mobile-2.svg);
+}
+
+.wave--footer{
+    --wave: url(/huddle-landing-page/images/bg-footer-top-mobile.svg)
 }
 
 .hero{
-    width: 100%;
-    max-width: 23.4375rem;
+    width: 90%;
     margin: 1.25rem auto 0;
 }
 
 .hero__header{
     padding: 0 .75rem;
-
-    align-items: var(--center);
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hero__header__logo{
@@ -97,7 +96,7 @@ a,
     padding: .375rem 1.625rem;
     border: .125rem solid var(--light-pink);
     border-radius: 1rem;
-    font-size: .7em;
+    font-size: 12px;
     text-decoration: none;
     color: var(--light-pink);
 }
@@ -110,7 +109,7 @@ a,
 .hero__texts{
     margin: 3.75rem auto 0;
     width: 95%;
-
+    font-size: 16px;
     text-align: var(--center);
 }
 
@@ -143,36 +142,35 @@ a,
 .hero__picture{
     margin: 3.75rem auto 5rem;
     width: 90%;
-    max-height: 200px;
 }
 
 .hero__picture img{
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
 }
 
 .hero__numbers{
-    text-align: var(--center);
-    width: auto;
-
-    align-self: var(--center);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .hero__numbers__containers{
     margin-bottom: 2.5rem;
+    font-size: 16px;
+    font-family: var(--open-sans);
 }
 
 .hero__numbers__picture{
     position: relative;
-    padding-bottom: 1.25rem;
+    width: 30%;
 }
 
 .hero__numbers__picture img{
-    width: 1.875rem;
-    height: 1.875rem;
-    position: absolute;
-    left: 0;
+    width: 100%;
+    display: inline-block;
 }
 
 .hero__numbers__number,
@@ -181,13 +179,9 @@ a,
 }
 
 .hero__numbers__number{
-    font-size: 3rem;
+    font-size: 4em;
     font-weight: 700;
-    font-family: var(--open-sans);
-}
-
-.hero__numbers__texts{
-    font-size: 12px;
+    width: 10.625rem;
 }
 
 .grow__together,
@@ -195,28 +189,14 @@ a,
 .your-users,
 .section__cta{
     width: 100%;
+}
+
+.section__container,
+.section__cta{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.wave--grow{
-    --wave-top: url(/huddle-landing-page/images/bg-section-top-mobile-1.svg);
-}
-
-.wave--flowing{
-    --wave-top: url(/huddle-landing-page/images/bg-section-bottom-mobile-1.svg);
-}
-
-.wave--users{
-    --wave-top: url(/huddle-landing-page/images/bg-section-top-mobile-2.svg);
-
-}
-
-.wave--cta{
-    --wave-top: url(/huddle-landing-page/images/bg-section-bottom-mobile-2.svg);
-}
-
-.wave--footer{
-    --wave-top: url(/huddle-landing-page/images/bg-footer-top-mobile.svg)
+    width: 100%;
 }
 
 .section__img, 
@@ -226,14 +206,14 @@ a,
 }
 
 .section__texts{
-    font-size: .875rem;
+    font-size: 16px;
     color: var(--very-dark-cyan);
     padding-bottom: 1.875rem;
 }
 
 .section__title{
     font-family: var(--poppins);
-    font-size: 1.375rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
@@ -274,6 +254,7 @@ a,
 
 .footer{
     background-color: var(--very-dark-cyan);
+    width: 100%;
 }
 
 .footer__container{
@@ -310,28 +291,30 @@ a,
     border: 0;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+}
+
 .footer__button{
-    display: inline-block;
     padding: .75rem 1.625rem;
     border: 1px solid var(--ṕink);
-    width: 60%;
     margin: .625rem 0 3.75rem;
     color: var(--white);
     background-color: var(--ṕink);
     font-size: .9375rem;
     font-weight: 700;
     border-radius: 6px;
-    align-self: flex-end;
 
+    align-self: flex-end;
     cursor: pointer;
 }
 
 .footer__info img{
-    width: 60%;
+    width: 100%;
 }
 
 .footer__contact__info{
-    width: 85%;
     margin: 0 auto;
     display: flex;
     color: var(--very-pale-blue);
@@ -340,10 +323,8 @@ a,
     align-items: center;
 }
 
-.footer__contact__info img{
-    flex-basis: 1;
-    width: 1.5rem;
-    height: 1.5rem;
+.footer__picture{
+    width: 50%;
 }
 
 .footer__contact__info p{
@@ -353,17 +334,96 @@ a,
 }
 
 .footer__medias{
-    width: 85%;
-    margin: 0 auto 1.875rem;
+    margin-bottom: 1.875rem;
 }
+
 .footer__medias__container{
     display: flex;
     justify-content: flex-start;
-    width: 40%;
     margin-top: 40px;
     gap: 1.25rem;
+}
+.footer__medias__container img,
+.footer__medias__container img:hover{
+    transition: .3s ease-in-out;
+}
+
+.footer__medias__container img:hover{
+    transform: scale(1.2);
+}
+
+.footer__medias a{
+    width: 30px;
 }
 
 .footer__medias img{
     width: 100%;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .wave--grow{
+        --wave: url(/huddle-landing-page/images/bg-section-top-desktop-1.svg);
+    }
+    
+    .wave--flowing{
+        --wave: url(/huddle-landing-page/images/bg-section-bottom-desktop-1.svg);
+    }
+    
+    .wave--users{
+        --wave: url(/huddle-landing-page/images/bg-section-top-desktop-2.svg);
+    
+    }
+    
+    .wave--cta{
+        --wave: url(/huddle-landing-page/images/bg-section-bottom-desktop-2.svg);
+    }
+    
+    .wave--footer{
+        --wave: url(/huddle-landing-page/images/bg-footer-top-desktop.svg)
+    }
+
+    .hero__numbers{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section__container, 
+    .footer__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 30px auto;
+        width: 90%;
+        gap: 100px;
+    }
+
+    .grow__together .section__img,
+    .your-users .section__img{
+        order: 1;
+    }
+
+    .footer__texts{
+        order: 1;
+    }
+
+    .footer__info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__info,
+    .footer__texts{
+        padding: 50px;
+    }
+
+    .footer__input{
+        display: inline;
+        width: 100%;
+    }
+
+    .footer__input{
+        display: inline;
+    }
 }

@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huddle - Home page</title>
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="icon" href="images/favicon-32x32.png" type="images/svg">
+    <meta author="Juan Parra">
 </head>
 <body>
-    <div class="hero flex--column">
+    <div class="hero">
         <div class="flex--row hero__header">
             <div class="hero__header__logo">
                 <img src="images/logo.svg" alt="">
@@ -38,7 +40,7 @@
             </div>
             <div class="hero__numbers__containers">
                 <div class="hero__numbers__picture">
-                    <img src="images/icon-messages.svg" alt="">
+                    <img src="images/icon-messages.svg" alt="" class="hero__numbers__icon">
                 </div>
                 <p class="hero__numbers__number">2.7m+</p>
                 <p class="hero__numbers__texts">Messages Sent</p>
@@ -46,95 +48,111 @@
         </div>
     </div>
 
-    <div class="wave wave--top wave--grow"></div>
+    <div class="wave wave--grow"></div>
     
-    <section class="flex--column grow__together">
-        <div class="section__img">
-            <img src="images/illustration-grow-together.svg" alt="">
-        </div>
-        <div class="section__texts">
-            <h2 class="section__title">Grow Together</h2>
-            <div class="section__paragraph">Generate meaningful discussions with your audience and build a strong, loyal community. 
-                Think of the insightful conversations you miss out on with a feedback form. </div>
-        </div>
+    <section class="grow__together">
+        <div class="section__container">
+            <div class="section__img">
+                <img src="images/illustration-grow-together.svg" alt="">
+            </div>
+            <div class="section__texts">
+                <h2 class="section__title">Grow Together</h2>
+                <div class="section__paragraph">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form. </div>
+            </div>
+       </div>
     </section>
     
-    <div class="wave wave--top wave--flowing"></div>
+    <div class="wave wave--flowing"></div>
 
-    <section class="flex--column flowing">
-        <div class="section__img">
-            <img src="images/illustration-flowing-conversation.svg" alt="">
+    <section class="flowing">
+        <div class="section__container">
+            <div class="section__img">
+                <img src="images/illustration-flowing-conversation.svg" alt="">
+            </div>
+            <div class="section__texts">
+                <h2 class="section__title">Flowing Conversations</h2>
+                <div class="section__paragraph">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</div>
+            </div>
         </div>
-        <div class="section__texts">
-            <h2 class="section__title">Flowing Conversations</h2>
-            <div class="section__paragraph">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</div>
-        </div>
+
     </section>
     
-    <div class="wave wave--top wave--users"></div>
+    <div class="wave wave--users"></div>
 
-    <section class="flex--column your-users">
-        <div class="section__img">
-            <img src="images/illustration-your-users.svg" alt="">
+    <section class="flex your-users">
+        <div class="section__container">
+            <div class="section__img">
+                <img src="images/illustration-your-users.svg" alt="">
+            </div>
+            <div class="section__texts">
+                <h2 class="section__title">Your Users</h2>
+                <div class="section__paragraph">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</div>
+            </div>
         </div>
-        <div class="section__texts">
-            <h2 class="section__title">Your Users</h2>
-            <div class="section__paragraph">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</div>
-        </div>
+
     </section>
 
-    <div class="wave wave--top wave--cta"></div>
+    <div class="wave wave--cta"></div>
 
-    <div class="flex--column section__cta">
+    <div class="flex section__cta">
         <div class="section__texts">
             <h2 class="section__title">Ready To Build Your Community?</h2>
             <a href="">Get Started For Free</a>
         </div>
     </div>
 
-    <div class="wave wave--top wave--footer"></div>
+    <div class="wave wave--footer"></div>
 
-    <footer class="flex--column footer">
+    <footer class="flex footer">
         <div class="footer__container">
             <div class="footer__texts">
                 <h3 class="footer__title">Newsletter</h3>
                 <p class="footer__paragraph">    To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
-                <form action="" class="flex--column">
+                <form action="">
                     <input type="text" class="footer__input">
                     <button class="footer__button" type="submit">Subscribe</button>
                 </form>
-                
             </div>
             <div class="footer__info">
-                <img src="images/footer-logo.svg" alt="">
-                <p class="footer__paragraph">    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+                <div class="footer__info__container">
+                    <div class="footer__picture">
+                        <img src="images/footer-logo.svg" alt="">
+                    </div>
+                    <p class="footer__paragraph">    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact__info">
+                        <div class="footer__contact__icon">
+                            <img src="images/icon-phone.svg" alt="">
+                        </div>
+                        <p>Phone: +1-543-123-4567</p>
+                    </div>
+                    <div class="footer__contact__info">
+                        <div class="footer__contact__icon">
+                            <img src="images/icon-email.svg" alt="">
+                        </div>
+                        <p>example@huddle.com</p>
+                    </div>
+                </div>
+        
+                <div class="footer__medias">
+                    <div class="footer__medias__container">
+                        <a href="#">
+                            <img src="images/facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/instagram-icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/twitter.svg" alt="">
+                        </a>
+                    </div>
+        
+                </div>
             </div>
-        </div>
-        <div class="footer__contact">
-            <div class="footer__contact__info">
-                <img src="images/icon-phone.svg" alt="">
-                <p>Phone: +1-543-123-4567</p>
             </div>
-            <div class="footer__contact__info">
-                <img src="images/icon-email.svg" alt="">
-                <p>example@huddle.com</p>
-            </div>
-        </div>
 
-        <div class="footer__medias">
-            <div class="footer__medias__container">
-                <a href="#">
-                    <img src="images/facebook.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="images/instagram-icon.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="images/twitter.svg" alt="">
-                </a>
-            </div>
 
-        </div>
     </footer>
 </body>
 </html>
