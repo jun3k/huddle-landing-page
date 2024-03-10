@@ -422,15 +422,23 @@ form{
 
     .footer__info,
     .footer__texts{
-        padding: 50px;
+        padding: 3.125rem;
+    }
+
+    form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
     }
 
     .footer__input{
-        display: inline;
-        width: 100%;
+        width: 65%;
     }
 
-    .footer__input{
-        display: inline;
+    .footer__button{
+        width: 35%;
+        margin: 0;
+        border: none;
     }
 }
